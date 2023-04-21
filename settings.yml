@@ -42,6 +42,11 @@ show_below_site_header:
   type: bool
   description: "Display the banner in the below site header connector."
 
+show_below_category_header:
+  default: false
+  type: bool
+  description: "Display the banner in the below category header connector."
+
 show_category_icon:
   default: false
   description: Show category icon from the <a href="https://meta.discourse.org/t/category-icons/104683" target="_blank">Discourse Category Icons component</a>
