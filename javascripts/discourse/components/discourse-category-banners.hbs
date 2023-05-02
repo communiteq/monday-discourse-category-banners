@@ -7,16 +7,19 @@
     style={{if this.category this.safeStyle}}
   >
 
+  <div class="category-logo">
+        {{#if this.category.uploaded_logo.url}}
+        {{cdn-img
+          src=this.category.uploaded_logo.url
+          class="category-logo"
+          width=this.category.uploaded_logo.width
+          height=this.category.uploaded_logo.height
+          alt=""
+        }}
+      {{/if}}
+  </div>
     <div class="category-title-contents">
       <h1 class="category-title">
-        {{#if (and (theme-setting "show_category_icon") this.category)}}
-          {{#if this.hasIconComponent}}
-            {{! For compatibility with https://meta.discourse.org/t/category-icons/104683}}
-            <CategoryIcon @category={{this.category}} />
-          {{else}}
-            {{this.consoleWarn}}
-          {{/if}}
-        {{/if}}
         {{#if this.category.read_restricted}}
           {{d-icon "lock"}}
         {{/if}}
