@@ -7,6 +7,7 @@
     style={{if this.category this.safeStyle}}
   >
   <div class="wrap">
+  <div class="category-main-banner">
   <div class="category-banner-logo">
         {{#if this.category.uploaded_logo.url}}
         {{cdn-img
@@ -31,6 +32,7 @@
           <div class="cooked" innerHTML={{this.category.description}}></div>
         </div>
       {{/if}}
+    </div>
     </div>
     </div>
   </div>
