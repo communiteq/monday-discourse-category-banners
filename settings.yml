@@ -11,7 +11,7 @@ show_subcategory:
   description: "Show banners for subcategories"
 
 hide_if_no_description:
-  default: true
+  default: false
   description: "Hide banners if category description is not set"
 
 exceptions:
