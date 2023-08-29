@@ -1,0 +1,12 @@
+.category-main-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: var(--d-max-width);
+    margin-left: 1em;
+    text-align: left;
+  }
+  
+  .category-banner-logo {
+    align-self: center;
+  }
